@@ -1,6 +1,12 @@
 Mikkel 
 VTE
 
+Exercise 6.6
+Jeg comitter tekst.
+
+
+
+
 TODO: Add more to the title of your project here
 
 # LearnR3:
