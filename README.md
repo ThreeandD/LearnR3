@@ -3,6 +3,9 @@ VTE
 
 Exercise 6.6
 Jeg comitter tekst.
+Meget tekst
+Rigtigt meget tekst 
+Oceaner af tekst
 
 
 
