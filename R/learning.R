@@ -1,22 +1,51 @@
-# Basics of R -------------------------------------------------------------
-
-
-colnames(airquality)
-
-str(airquality)
-
-summary(airquality)
-
-1 + 1
-
-mean(2:6)
-
-# Loading packages --------------------------------------------------------
-
+# load packages
 library(tidyverse)
+library(NHANES)
 
-# This will be used for testing out GI
+# Looking at data
+glimpse(NHANES)
 
-# Here is an example of a conflict.
+# Selecting columns
+select(NHANES, Age)
 
-#Chapter 7 - Data management
+select(NHANES, Age, Weight, BMI)
+
+select(NHANES, -HeadCirc)
+
+select(NHANES, starts_with("BP"))
+
+select(NHANES, ends_with("Day"))
+
+select(NHANES, contains("Age"))
+
+# Create smaller NHANES dataset
+nhanes_small <- select(NHANES, Age, Gender, BMI, Diabetes, PhysActive, BPSysAve, BPDiaAve, Education)
+
+# Rename columns
+nhanes_small <- rename_with(nhanes_small, snakecase::to_snake_case)
+
+# Renamning specific columns
+nhanes_small <- rename(nhanes_small, sex = gender)
+
+# Trying out the pipe
+colnames(nhanes_small)
+
+nhanes_small %>%
+  colnames()
+
+nhanes_small %>%
+  select(phys_active) %>%
+  rename(physically_active = phys_active)
+
+# Exercsie 7.8
+nhanes_small %>%
+  select(bp_sys_ave, education)
+
+nhanes_small %>%
+  rename(bp_sys = bp_sys_ave, bp_dia = bp_sys_ave)
+
+nhanes_small %>%
+  select(bmi, contains("age"))
+
+nhanes_small %>%
+  rename(bp_systolic = bp_sys_ave)
