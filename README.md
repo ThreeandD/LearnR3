@@ -44,3 +44,5 @@ You'll need to have remotes installed for this to work.
 For more information on this folder and file workflow and setup, check
 out the [prodigenr](https://rostools.github.io/prodigenr) online
 documentation.
+
+# Here is an example of a conflict.
