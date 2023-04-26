@@ -18,3 +18,5 @@ library(tidyverse)
 # This will be used for testing out GI
 
 # Here is an example of a conflict.
+
+#Chapter 7 - Data management

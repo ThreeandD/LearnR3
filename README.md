@@ -50,7 +50,6 @@ You'll need to have remotes installed for this to work.
 
 
 
-#Chapter 7 - Data management 
 
 
 
