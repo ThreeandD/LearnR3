@@ -47,3 +47,11 @@ You'll need to have remotes installed for this to work.
 
 # Here is a conflict
 
+
+
+
+#Chapter 7 - Data management 
+
+
+
+
