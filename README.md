@@ -34,15 +34,16 @@ If dependencies have been managed by using `usethis::use_package("packagename")`
 through the `DESCRIPTION` file, installing dependencies is as easy as opening the
 `LearnR3.Rproj` file and running this command in the console:
 
+Make a change
+
     # install.packages("remotes")
     remotes::install_deps()
 
 You'll need to have remotes installed for this to work.
 
-# Resource
 
-For more information on this folder and file workflow and setup, check
-out the [prodigenr](https://rostools.github.io/prodigenr) online
-documentation.
 
-# Here is an example of a conflict.´
+
+
+# Here is a conflict
+
