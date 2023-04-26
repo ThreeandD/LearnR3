@@ -48,4 +48,5 @@ nhanes_small %>%
   select(bmi, contains("age"))
 
 nhanes_small %>%
+  select(starts_with("bp_")) %>%
   rename(bp_systolic = bp_sys_ave)
