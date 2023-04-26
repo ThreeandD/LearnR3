@@ -34,6 +34,8 @@ If dependencies have been managed by using `usethis::use_package("packagename")`
 through the `DESCRIPTION` file, installing dependencies is as easy as opening the
 `LearnR3.Rproj` file and running this command in the console:
 
+Make a change
+
     # install.packages("remotes")
     remotes::install_deps()
 
